@@ -20,7 +20,7 @@ const httpServer = createServer(app);
 
 const io = new Server(httpServer, {
   cors: {
-    origin: ["http://192.168.1.122:3000", 'http://localhost:3000', 'https://scattergories.vercel.app'],
+    origin: '*',
     credentials: true,
   },
 });
